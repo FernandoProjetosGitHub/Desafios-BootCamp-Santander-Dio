@@ -1,39 +1,153 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-ul { list-style: none; padding-left: 5px; }
-a { color:blue; text-decoration: none;}
-.bar {
-    background-color: #f9f9fb;
-    padding:15px;
-    border-top: solid 1px #cdcdcd;
-    border-bottom: solid 1px #cdcdcd;
-}
-.content {
-    max-width: 1440px;
+body{
     margin: auto;
-    grid-gap: 3rem;
-    display: grid;
-    gap: 3rem;
-    grid-template-areas: "sidebar main anchors";
-    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
-    padding-left: 1rem;
-    padding-right: 1rem;
+    width: 1440px;
+    font-family: 'Raleway', sans-serif;
+    background-color: #000000;
+}
+.banner {
+    background: url(../images/banner.png) no-repeat;
+    background-color: rgba(1, 18, 26, 0.945);
+    width: 100%;
+}
+.banner-content{
+    width: 100%;
+    height: 605px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #33a8d8;
+    gap: 15px;
+    /* border-bottom: 0.5px solid #33a8d8; */
+}
+.banner-content h1 {
+    color: #33a8d8;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.banner-content p {
+    
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    width: 500px;   
+}
+.banner-content button {
+    width: 326px;
+    height: 57px;
+    border: #33a8d8 solid;
+    color: #33a8d8;
+    background: none;
+    cursor: pointer;
 }
 
-.footer {
-    min-height: 100px;
-    border-top: solid 1px #cdcdcd;
+/* main content */
+main {
+    
+    width: 100%;
 }
-.anchors {
-    border-left: solid 1px #cdcdcd;
-    padding-left: 15px;
+#course-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    gap: 20px;
+    padding: 40px 0;
+    /* border-bottom: 2px solid #33a8d8; */
 }
-.sidebar {
-    border-right: solid 1px #cdcdcd;
+#course-content h2 {
+    color: #33a8d8;
+    padding: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
 }
-figure {
+#course-content p {
+    font-size: 1rem;
     text-align: center;
+    color: #ffffff;
+    width: 500px; 
+}
+.modules-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    
+}
+.module {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-color: #252525;
+    width: 535px;
+    height: 51px;
+    color: #ffffff;
+    border-radius: 8px;
+    
+}
+.module span {
+    color: #33a8d8;
+}
+/* paralax */
+#transform-world {
+    width: 100%;
+    height: 600px;
+    background: url(../images/woman-code.png) no-repeat center ;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #443b97;
+
+}
+#transform-world p {
+    color: #ceccf0;
+    text-transform: lowercase;
+    text-shadow: #158df083 3px 3px;
+    font-size: 2em;
+    margin-left: 15%;
+}
+/* professional-challenges */
+#professional-challenges {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#professional-challenges h2 {
+    color: #33a8d8;
+    padding: 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    width: 40%;
+}
+#professional-challenges p {
+    color: #ffffff;
+    width: 70%;
+    text-align: center;
+    padding: 50px;
+}
+/* footer */
+footer {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     background-color: rgba(0, 11, 15, 0.945);
+}
+footer p {
+    color: #ffffff;
+    
+}
+footer p a {
+    text-decoration: none;
 }
