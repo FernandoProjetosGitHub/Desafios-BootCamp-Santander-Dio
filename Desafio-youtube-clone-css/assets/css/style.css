@@ -1,0 +1,64 @@
+
+#navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    height: 56px;
+    width: 1440px;
+    margin-left: 20px;
+
+}
+#section-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 952px;
+    height: 746px;
+    margin-left: 75px;
+    margin-top: 84px;
+}
+main {
+    display: flex;
+    gap: 30px;
+}
+#main-h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+#video-actions {
+    height: 42px;
+    width: 902px;
+}
+#visualizacoes {
+    height: 16px;
+    width: 391px;
+}
+#aventura {
+    height: 64px;
+    width: 510px;
+}
+aside {
+    display: flex;
+    
+
+}
+#video-cards {
+    left: 1052px;
+    margin-top: 84px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 938px;
+    width: 160px;
+}
+#video-cards div {
+    display: flex;
+    gap: 20px;
+}
+#video-cards div img {
+    height: 89px;
+    width: 196px;
+}
